@@ -1,0 +1,15 @@
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.deps.json
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.runtimeconfig.json
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.dll
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/bin/Debug/net7.0/PrimeiroPrograma.pdb
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.csproj.AssemblyReference.cache
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.GeneratedMSBuildEditorConfig.editorconfig
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.AssemblyInfoInputs.cache
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.AssemblyInfo.cs
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.csproj.CoreCompileInputs.cache
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.dll
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/refint/PrimeiroPrograma.dll
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.pdb
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/PrimeiroPrograma.genruntimeconfig.cache
+/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/Debug/net7.0/ref/PrimeiroPrograma.dll
