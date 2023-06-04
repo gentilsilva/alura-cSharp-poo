@@ -8,24 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/gentil/.nuget/packages/": {}
+    "C:\\Users\\genti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/PrimeiroPrograma.csproj",
+      "projectUniqueName": "C:\\Users\\genti\\Documents\\workspace\\alura-cSharp-poo\\1-primeira-aplicacao\\PrimeiroPrograma\\PrimeiroPrograma\\PrimeiroPrograma.csproj",
       "projectName": "PrimeiroPrograma",
-      "projectPath": "/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/PrimeiroPrograma.csproj",
-      "packagesPath": "/home/gentil/.nuget/packages/",
-      "outputPath": "/home/gentil/Documentos/workspace/alura-cSharp-POO/1-primeira-aplicacao/PrimeiroPrograma/PrimeiroPrograma/obj/",
+      "projectPath": "C:\\Users\\genti\\Documents\\workspace\\alura-cSharp-poo\\1-primeira-aplicacao\\PrimeiroPrograma\\PrimeiroPrograma\\PrimeiroPrograma.csproj",
+      "packagesPath": "C:\\Users\\genti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\genti\\Documents\\workspace\\alura-cSharp-poo\\1-primeira-aplicacao\\PrimeiroPrograma\\PrimeiroPrograma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/gentil/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\genti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/gentil/.asdf/installs/dotnet-core/7.0.202/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
