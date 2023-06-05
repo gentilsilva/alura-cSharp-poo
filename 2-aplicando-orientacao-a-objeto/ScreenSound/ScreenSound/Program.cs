@@ -1,15 +1,15 @@
-﻿Musica musicaUm = new Musica();
-musicaUm.Nome = "Roxane";
-musicaUm.Artista = "The Police";
-musicaUm.Duracao = 273;
-musicaUm.Disponivel = true;
-Console.WriteLine(musicaUm.DescricaoResumida);
+﻿Album johnMayer = new Album();
+johnMayer.Nome = "Continuum";
+
+Musica musicaUm = new Musica();
+musicaUm.Nome = "Gravity";
+musicaUm.Duracao = 245;
 
 Musica musicaDois = new Musica();
-musicaDois.Nome = "Vertigo";
-musicaDois.Artista = "U2";
-musicaDois.Duracao = 367;
-musicaDois.Disponivel = false;
+musicaDois.Nome = "Daughters";
+musicaDois.Duracao = 238;
 
-musicaUm.ExibirFichaTecnica();
-musicaDois.ExibirFichaTecnica();
+johnMayer.AdicionarMusica(musicaUm);
+johnMayer.AdicionarMusica(musicaDois);
+
+johnMayer.ExibirMusicasDoAlbum();
