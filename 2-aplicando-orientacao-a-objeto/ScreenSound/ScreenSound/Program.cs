@@ -1,24 +1,13 @@
-﻿Banda johnMayer = new Banda("John Mayer");
+﻿Episodio episodioUm = new(1, "Técnicas de facilitação", 45);
+episodioUm.AdicionarConvidado("Maria");
+episodioUm.AdicionarConvidado("Marcelo");
 
-Album albumJohnMayer = new Album("Continuum");
+Episodio episodioDois = new(2, "Técnicas de aprendizado", 67);
+episodioDois.AdicionarConvidado("Fernando");
+episodioDois.AdicionarConvidado("Marcos");
+episodioDois.AdicionarConvidado("Flavia");
 
-Musica musicaUm = new Musica(johnMayer, "Gravity")
-{
-    Duracao = 245,
-    Disponivel = true,
-};
-
-Musica musicaDois = new Musica(johnMayer, "Daughters")
-{
-    Duracao = 238,
-    Disponivel = false,
-};
-
-albumJohnMayer.AdicionarMusica(musicaUm);
-albumJohnMayer.AdicionarMusica(musicaDois);
-johnMayer.AdicionarAlbum(albumJohnMayer);
-
-musicaUm.ExibirFichaTecnica();
-musicaDois.ExibirFichaTecnica();
-albumJohnMayer.ExibirMusicasDoAlbum();
-johnMayer.ExibirDiscografia();
+Podcast podcast = new("Podcast especial", "Daniel");
+podcast.AdicionarEpisodio(episodioUm);
+podcast.AdicionarEpisodio(episodioDois);
+podcast.ExibirDetalhes();
