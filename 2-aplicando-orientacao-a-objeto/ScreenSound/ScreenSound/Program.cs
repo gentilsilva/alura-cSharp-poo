@@ -1,15 +1,24 @@
-﻿Album johnMayer = new Album();
-johnMayer.Nome = "Continuum";
+﻿Banda johnMayer = new Banda("John Mayer");
 
-Musica musicaUm = new Musica();
-musicaUm.Nome = "Gravity";
-musicaUm.Duracao = 245;
+Album albumJohnMayer = new Album("Continuum");
 
-Musica musicaDois = new Musica();
-musicaDois.Nome = "Daughters";
-musicaDois.Duracao = 238;
+Musica musicaUm = new Musica(johnMayer, "Gravity")
+{
+    Duracao = 245,
+    Disponivel = true,
+};
 
-johnMayer.AdicionarMusica(musicaUm);
-johnMayer.AdicionarMusica(musicaDois);
+Musica musicaDois = new Musica(johnMayer, "Daughters")
+{
+    Duracao = 238,
+    Disponivel = false,
+};
 
-johnMayer.ExibirMusicasDoAlbum();
+albumJohnMayer.AdicionarMusica(musicaUm);
+albumJohnMayer.AdicionarMusica(musicaDois);
+johnMayer.AdicionarAlbum(albumJohnMayer);
+
+musicaUm.ExibirFichaTecnica();
+musicaDois.ExibirFichaTecnica();
+albumJohnMayer.ExibirMusicasDoAlbum();
+johnMayer.ExibirDiscografia();
