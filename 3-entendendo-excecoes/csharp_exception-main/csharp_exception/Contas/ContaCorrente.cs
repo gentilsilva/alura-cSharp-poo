@@ -84,12 +84,21 @@ namespace csharp_exception.Contas
             return saldo;
         }
 
-        public ContaCorrente(int numero_agencia, string numero_conta)
+        public ContaCorrente(int numeroAgencia, string numeroConta)
         {
-            NumeroAgencia = numero_agencia;
-            Conta = numero_conta;
+            NumeroAgencia = numeroAgencia;
+            Conta = numeroConta;
 
-            TaxaDeOperacao = 10 / TotalDeContasCriadas;
+            try
+            {
+                TaxaDeOperacao = 10 / TotalDeContasCriadas;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Ocorreu um erro! Não é possível fazer uma divisão por zero.");
+            }
+
+
 
             TotalDeContasCriadas++;
         }
