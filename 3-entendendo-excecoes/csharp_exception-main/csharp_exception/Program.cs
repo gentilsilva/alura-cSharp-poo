@@ -1,7 +1,9 @@
 ﻿using csharp_exception.Titular;
 using csharp_exception.Contas;
 using csharp_exception;
+using System.Numerics;
 
+/*
 try
 {
     ContaCorrente contaUm = new(0, "1234-X");
@@ -21,4 +23,20 @@ catch(SaldoInsuficienteException ex)
 {
     Console.WriteLine("Operação negada! Saldo insuficiente.");
     Console.WriteLine(ex.Message);
+}
+*/
+
+LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
+try
+{
+    leitor.LerProximaLinha();
+    leitor.LerProximaLinha();    
+}
+catch (IOException)
+{
+    Console.WriteLine("Leitura de arquivo interrompida.");
+}
+finally
+{
+    leitor.Fechar();
 }
