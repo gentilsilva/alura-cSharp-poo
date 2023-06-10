@@ -182,9 +182,9 @@ void TestaArrayDeContasCorrentes()
 
 List<ContaCorrente> _listaDeContas = new List<ContaCorrente>()
 {
-    new ContaCorrente(95, "123456-X") {Saldo = 100},
-    new ContaCorrente(95, "951258-X") {Saldo = 200},
-    new ContaCorrente(95, "987321-W") {Saldo = 60}
+    new ContaCorrente(95, "123456-X") {Saldo = 100, Titular = new Cliente{Cpf = "11111", Nome = "Gentil"}},
+    new ContaCorrente(95, "951258-X") {Saldo = 200, Titular = new Cliente{Cpf = "22222", Nome = "Isabella"}},
+    new ContaCorrente(95, "987321-W") {Saldo = 60, Titular = new Cliente{Cpf = "33333", Nome = "Fernanda"}}
 };
 
 AtendimentoCliente();
@@ -222,6 +222,15 @@ void AtendimentoCliente()
                     break;
                 case '2':
                     ListarContas();
+                    break;
+                case '3':
+                    RemoverConta();
+                    break;
+                case '4':
+                    OrdenarConta();
+                    break;
+                case '5':
+                    PesquisarConta();
                     break;
                 default:
                     Console.WriteLine("Opção não implementada.");
@@ -289,6 +298,7 @@ void ListarContas()
     {
         Console.WriteLine("===   Dados da Conta   ===");
         Console.WriteLine("Número da conta: " + item.Conta);
+        Console.WriteLine("Saldo da Conta: " + item.Saldo);
         Console.WriteLine("Titular da conta: " + item.Titular.Nome);
         Console.WriteLine("CPF do Titular: " + item.Titular.Cpf);
         Console.WriteLine("Profissão do Titular: " + item.Titular.Profissao);
@@ -297,4 +307,95 @@ void ListarContas()
     }
 }
 
+void RemoverConta()
+{
+    Console.Clear();
+    Console.WriteLine("===============================");
+    Console.WriteLine("===      REMOVER CONTA      ===");
+    Console.WriteLine("===============================");
+    Console.WriteLine("\n");
+    Console.Write("Informe o número da Conta: ");
+    string numeroConta = Console.ReadLine();
+    ContaCorrente conta = null;
 
+    foreach ( var item in  _listaDeContas )
+    {
+        if (item.Conta.Equals(numeroConta))
+        {
+            conta = item;
+        }
+    }
+    if( conta != null )
+    {
+        _listaDeContas.Remove(conta);
+        Console.WriteLine("... Conta removida da lista! ...");
+    }
+    else
+    {
+        Console.WriteLine("... Conta para remoção não encontrada ...");
+    }
+    Console.ReadKey();
+}
+
+void OrdenarConta()
+{
+    _listaDeContas.Sort();
+    Console.WriteLine("... Lista de contas ordenada ...");
+    Console.ReadKey();
+}
+
+void PesquisarConta()
+{
+    Console.Clear();
+    Console.WriteLine("===============================");
+    Console.WriteLine("===      PESQUISAR CONTA      ===");
+    Console.WriteLine("===============================");
+    Console.WriteLine("\n");
+    Console.Write("Deseja pesquisar (1) NUMERO DA CONTA ou (2) CPF TITULAR: ");
+    switch (int.Parse(Console.ReadLine()))
+    {
+        case 1:
+            Console.Write("Informe o número da Conta: ");
+            string _numeroConta = Console.ReadLine();
+            ContaCorrente consultaConta = ConsultarPorNumeroConta(_numeroConta);
+            Console.WriteLine( consultaConta.ToString() );
+            Console.ReadKey();
+            break;
+        case 2:
+            Console.Write("Informe o CPF do Titular: ");
+            string _cpf = Console.ReadLine();
+            ContaCorrente consultaCpf = ConsultarPorCpfTitular(_cpf);
+            Console.WriteLine( consultaCpf.ToString() );
+            Console.ReadKey();
+            break;
+        default:
+            Console.WriteLine("Opção não implmenentada.");
+            break;
+    }
+}
+
+ContaCorrente ConsultarPorCpfTitular(string? cpf)
+{
+    ContaCorrente conta = null;
+    for (int i = 0; i < _listaDeContas.Count; i++)
+    {
+        if (_listaDeContas[i].Titular.Cpf.Equals(cpf))
+        {
+            conta = _listaDeContas[i];
+        }
+    }
+    return conta;
+}
+
+ContaCorrente ConsultarPorNumeroConta(string? numeroConta)
+{
+    ContaCorrente conta = null;
+    for (int i = 0; i < _listaDeContas.Count; i++)
+    {
+        if (_listaDeContas[i].Conta.Equals(numeroConta))
+        {
+            conta = _listaDeContas[i];
+        }
+    }
+    return conta;
+}
