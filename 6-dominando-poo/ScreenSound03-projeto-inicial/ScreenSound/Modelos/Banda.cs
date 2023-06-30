@@ -4,7 +4,7 @@ internal class Banda : IAvaliavel
 {
     private List<Album> albuns = new List<Album>();
     private List<Avaliacao> notas = new List<Avaliacao>();
-    private List<Musica> musicas = new();
+    private List<Musica> musicas = new List<Musica>();
 
     public Banda(string nome)
     {

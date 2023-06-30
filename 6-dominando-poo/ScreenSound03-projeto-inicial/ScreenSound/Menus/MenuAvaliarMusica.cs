@@ -17,11 +17,11 @@ internal class MenuAvaliarMusica : Menu
             string tituloMusica = Console.ReadLine()!;
             if (banda.Musicas.Any(a => a.Nome.Equals(tituloMusica)))
             {
-                Album album = banda.Albuns.First(a => a.Nome.Equals(tituloMusica));
+                Musica musica = banda.Musicas.First(a => a.Nome.Equals(tituloMusica));
                 Console.Write($"Qual a nota que a música {tituloMusica} merece: ");
                 Avaliacao nota = Avaliacao.Parse(Console.ReadLine()!);
-                album.AdicionarNota(nota);
-                Console.WriteLine($"\nA nota {nota.Nota} foi registrada com sucesso para a albúm {tituloMusica}");
+                musica.AdicionarNota(nota);
+                Console.WriteLine($"\nA nota {nota.Nota} foi registrada com sucesso para a música {tituloMusica}");
                 Thread.Sleep(2000);
                 Console.Clear(); 
             }
