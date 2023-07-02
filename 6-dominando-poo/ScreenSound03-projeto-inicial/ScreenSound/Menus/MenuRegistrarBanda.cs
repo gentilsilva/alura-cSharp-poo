@@ -26,6 +26,7 @@ internal class MenuRegistrarBanda : Menu
         }
         catch (Exception e)
         {
+            Console.WriteLine("Não foi possível recuperar o resumo. Plano vencido.");
             banda.Resumo = "Não foi possível recuperar o resumo. Plano vencido.";
         }
         
